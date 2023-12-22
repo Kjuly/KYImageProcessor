@@ -54,21 +54,3 @@ public enum KYPhotoScaleMode: Int {
   case scaleAspectFill = 0
   case scaleAspectFit  = 1
 }
-
-// MARK: - Photo Thumbnail
-
-@objc
-public class KYPhotoThumbnail: NSObject {
-
-  public static let defaultMaxSideLength: CGFloat = 128.0
-
-  @objc
-  public static func thumbnailSize(
-    from imageSize: CGSize,
-    maxSideLength: CGFloat = defaultMaxSideLength
-  ) -> CGSize {
-    return (imageSize.height > imageSize.width
-            ? CGSize(width: imageSize.width * maxSideLength / imageSize.height, height: maxSideLength)
-            : CGSize(width: maxSideLength, height: imageSize.height * maxSideLength / imageSize.width))
-  }
-}

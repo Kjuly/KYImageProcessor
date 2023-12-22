@@ -21,6 +21,7 @@
 		7F5BD07F2B35792E00503561 /* KYImageProcessingLocalizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5BD07E2B35792E00503561 /* KYImageProcessingLocalizations.swift */; };
 		7F5BD0822B35794300503561 /* KYImageProcessingLocalizations.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F5BD0842B35794300503561 /* KYImageProcessingLocalizations.strings */; };
 		7F5BD0872B357A1500503561 /* KYPhotoRatioLocalizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5BD0862B357A1500503561 /* KYPhotoRatioLocalizations.swift */; };
+		7FB180582B3588D0004AD1E4 /* KYPhotoThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB180572B3588D0004AD1E4 /* KYPhotoThumbnail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		7F5BD0832B35794300503561 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/KYImageProcessingLocalizations.strings; sourceTree = "<group>"; };
 		7F5BD0852B35794500503561 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/KYImageProcessingLocalizations.strings"; sourceTree = "<group>"; };
 		7F5BD0862B357A1500503561 /* KYPhotoRatioLocalizations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYPhotoRatioLocalizations.swift; sourceTree = "<group>"; };
+		7FB180572B3588D0004AD1E4 /* KYPhotoThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYPhotoThumbnail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				7F281ECD2B356EB1001689C5 /* KYPhotoConfiguration.swift */,
 				7F281EDE2B3570B3001689C5 /* KYViewRatio.swift */,
+				7FB180572B3588D0004AD1E4 /* KYPhotoThumbnail.swift */,
 				7F5BD0862B357A1500503561 /* KYPhotoRatioLocalizations.swift */,
 			);
 			path = KYPhotoConfiguration;
@@ -327,6 +330,7 @@
 				7F281EDD2B356F4F001689C5 /* KYImageProcessingLogger.swift in Sources */,
 				7F281ED22B356EB1001689C5 /* KYPhotoConfiguration.swift in Sources */,
 				7F281EDF2B3570B3001689C5 /* KYViewRatio.swift in Sources */,
+				7FB180582B3588D0004AD1E4 /* KYPhotoThumbnail.swift in Sources */,
 				7F5BD0872B357A1500503561 /* KYPhotoRatioLocalizations.swift in Sources */,
 				7F281ED42B356EB1001689C5 /* KYImageTransformer.swift in Sources */,
 				7F281ED32B356EB1001689C5 /* KYImagePreviewView.swift in Sources */,
