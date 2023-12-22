@@ -154,7 +154,7 @@ public class KYImageTransformer {
   ///
   /// - Returns: Transformed image.
   ///
-  static func transformedImage( // swiftlint:disable:this function_body_length function_parameter_count
+  public static func transformedImage( // swiftlint:disable:this function_body_length function_parameter_count
     from rawPhotoImage: UIImage,
     with transform: CGAffineTransform,
     currentImageViewFrame: CGRect,
@@ -302,7 +302,7 @@ public class KYImageTransformer {
   ///
   /// - Returns: Transformed image.
   ///
-  static func croppedImage(
+  public static func croppedImage(
     from image: UIImage,
     with cropFrame: CGRect,
     canvasFrame: CGRect,
