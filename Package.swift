@@ -5,6 +5,7 @@ import PackageDescription
 
 let package = Package(
   name: "KYImageProcessing",
+  defaultLocalization: "en",
   platforms: [
     .iOS("15.5"),
     .watchOS(.v6),
@@ -24,7 +25,10 @@ let package = Package(
       name: "KYImageProcessing",
       dependencies: [
       ],
-      path: "KYImageProcessing/Sources"),
+      path: "KYImageProcessing/Sources",
+      resources: [
+        .process("Resources/"),
+      ]),
     .testTarget(
       name: "KYImageProcessingTests",
       dependencies: [
