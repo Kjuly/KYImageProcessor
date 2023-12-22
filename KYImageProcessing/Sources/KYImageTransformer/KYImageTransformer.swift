@@ -31,7 +31,7 @@ public class KYImageTransformer {
   ///
   /// - Returns: Raw photo image that cropped to size in ratio that expected.
   ///
-  static func rawPhotoImage(
+  public static func rawPhotoImage(
     from captureredSourceImage: UIImage,
     in orientation: UIImage.Orientation,
     with fullscreenViewSize: CGSize,
