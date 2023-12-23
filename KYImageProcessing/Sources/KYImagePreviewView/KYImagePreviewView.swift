@@ -6,6 +6,9 @@
 //  Copyright © 2018 Kaijie Yu. All rights reserved.
 //
 
+import Foundation
+
+#if os(iOS)
 import UIKit
 
 public class KYImagePreviewView: UIView {
@@ -162,3 +165,4 @@ public class KYImagePreviewView: UIView {
     super.touchesCancelled(touches, with: event)
   }*/
 }
+#endif
