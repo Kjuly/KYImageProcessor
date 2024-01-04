@@ -6,6 +6,9 @@
 //  Copyright © 2019 Kaijie Yu. All rights reserved.
 //
 
+import Foundation
+
+#if os(iOS)
 import UIKit
 
 public class KYImageTransformer {
@@ -478,3 +481,4 @@ public class KYImageTransformer {
     return offset
   }
 }
+#endif // END #if os(iOS)

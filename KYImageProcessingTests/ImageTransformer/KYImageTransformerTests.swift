@@ -7,6 +7,8 @@
 //
 
 import XCTest
+
+#if os(iOS)
 @testable import KYImageProcessing
 
 final class KYImageTransformerTests: XCTestCase {
@@ -161,3 +163,4 @@ final class KYImageTransformerTests: XCTestCase {
                    accuracy: kYNPhotoImageTransformerTestsAccuracy)
   }
 }
+#endif // END #if os(iOS)
