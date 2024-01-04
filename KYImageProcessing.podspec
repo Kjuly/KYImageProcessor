@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "KYImageProcessing"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "The image processing foundation of KYPhotoPicker."
   spec.license      = "MIT"
   spec.source       = { :git => "https://github.com/Kjuly/KYImageProcessing.git", :tag => spec.version.to_s }
@@ -10,8 +10,6 @@ Pod::Spec.new do |spec|
   spec.social_media_url   = "https://twitter.com/kJulYu"
 
   spec.ios.deployment_target = "15.5"
-  spec.osx.deployment_target = "12.0"
-  spec.watchos.deployment_target = "6.0"
 
   spec.swift_version = '5.0'
 
