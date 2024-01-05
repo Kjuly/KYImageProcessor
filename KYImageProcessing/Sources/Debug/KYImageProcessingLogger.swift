@@ -19,5 +19,5 @@ func KYImageProcessingLog(
   print("🟣 DEBUG -[\(fileString.lastPathComponent) \(function)] L\(line): \(message)")
 }
 #else
-func KYLog(_ message: String) {}
+func KYImageProcessingLog(_ message: String) {}
 #endif
