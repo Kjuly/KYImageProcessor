@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F281EBC2B356DA1001689C5 /* KYImageProcessor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F281EB32B356DA1001689C5 /* KYImageProcessor.framework */; };
+		7F281EC12B356DA1001689C5 /* KYImageProcessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F281EC02B356DA1001689C5 /* KYImageProcessorTests.swift */; };
+		7F281EC22B356DA1001689C5 /* KYImageProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F281EB62B356DA1001689C5 /* KYImageProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F281ED22B356EB1001689C5 /* KYPhotoConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F281ECD2B356EB1001689C5 /* KYPhotoConfiguration.swift */; };
+		7F281ED32B356EB1001689C5 /* KYImagePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F281ECF2B356EB1001689C5 /* KYImagePreviewView.swift */; };
+		7F281ED42B356EB1001689C5 /* KYImageTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F281ED12B356EB1001689C5 /* KYImageTransformer.swift */; };
+		7F281ED92B356EB7001689C5 /* KYPhotoConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F281ED62B356EB6001689C5 /* KYPhotoConfigurationTests.swift */; };
+		7F281EDA2B356EB7001689C5 /* KYImageTransformerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F281ED82B356EB6001689C5 /* KYImageTransformerTests.swift */; };
+		7F281EDD2B356F4F001689C5 /* KYIPLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F281EDC2B356F4F001689C5 /* KYIPLogger.swift */; };
+		7F281EDF2B3570B3001689C5 /* KYViewRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F281EDE2B3570B3001689C5 /* KYViewRatio.swift */; };
+		7F281EE22B3571F7001689C5 /* KYViewRatioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F281EE12B3571F7001689C5 /* KYViewRatioTests.swift */; };
+		7F5BD07F2B35792E00503561 /* KYImageProcessorLocalizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5BD07E2B35792E00503561 /* KYImageProcessorLocalizations.swift */; };
+		7F5BD0822B35794300503561 /* KYImageProcessor.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F5BD0842B35794300503561 /* KYImageProcessor.strings */; };
+		7F5BD0872B357A1500503561 /* KYPhotoRatioLocalizations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5BD0862B357A1500503561 /* KYPhotoRatioLocalizations.swift */; };
+		7FB180582B3588D0004AD1E4 /* KYPhotoThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB180572B3588D0004AD1E4 /* KYPhotoThumbnail.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F281EBD2B356DA1001689C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F281EAA2B356DA0001689C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F281EB22B356DA1001689C5;
+			remoteInfo = KYImageProcessor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7F281EB32B356DA1001689C5 /* KYImageProcessor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KYImageProcessor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F281EB62B356DA1001689C5 /* KYImageProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYImageProcessor.h; sourceTree = "<group>"; };
+		7F281EBB2B356DA1001689C5 /* KYImageProcessorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYImageProcessorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F281EC02B356DA1001689C5 /* KYImageProcessorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYImageProcessorTests.swift; sourceTree = "<group>"; };
+		7F281ECD2B356EB1001689C5 /* KYPhotoConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYPhotoConfiguration.swift; sourceTree = "<group>"; };
+		7F281ECF2B356EB1001689C5 /* KYImagePreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYImagePreviewView.swift; sourceTree = "<group>"; };
+		7F281ED12B356EB1001689C5 /* KYImageTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYImageTransformer.swift; sourceTree = "<group>"; };
+		7F281ED62B356EB6001689C5 /* KYPhotoConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYPhotoConfigurationTests.swift; sourceTree = "<group>"; };
+		7F281ED82B356EB6001689C5 /* KYImageTransformerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYImageTransformerTests.swift; sourceTree = "<group>"; };
+		7F281EDC2B356F4F001689C5 /* KYIPLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYIPLogger.swift; sourceTree = "<group>"; };
+		7F281EDE2B3570B3001689C5 /* KYViewRatio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYViewRatio.swift; sourceTree = "<group>"; };
+		7F281EE02B3571AA001689C5 /* KYImageProcessor.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = KYImageProcessor.xctestplan; sourceTree = "<group>"; };
+		7F281EE12B3571F7001689C5 /* KYViewRatioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYViewRatioTests.swift; sourceTree = "<group>"; };
+		7F5BD07E2B35792E00503561 /* KYImageProcessorLocalizations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYImageProcessorLocalizations.swift; sourceTree = "<group>"; };
+		7F5BD0832B35794300503561 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/KYImageProcessor.strings; sourceTree = "<group>"; };
+		7F5BD0852B35794500503561 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/KYImageProcessor.strings"; sourceTree = "<group>"; };
+		7F5BD0862B357A1500503561 /* KYPhotoRatioLocalizations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYPhotoRatioLocalizations.swift; sourceTree = "<group>"; };
+		7FB180572B3588D0004AD1E4 /* KYPhotoThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KYPhotoThumbnail.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F281EB02B356DA1001689C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F281EB82B356DA1001689C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F281EBC2B356DA1001689C5 /* KYImageProcessor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F281EA92B356DA0001689C5 = {
+			isa = PBXGroup;
+			children = (
+				7F281EE02B3571AA001689C5 /* KYImageProcessor.xctestplan */,
+				7F281EB52B356DA1001689C5 /* KYImageProcessor */,
+				7F281EBF2B356DA1001689C5 /* KYImageProcessorTests */,
+				7F281EB42B356DA1001689C5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F281EB42B356DA1001689C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F281EB32B356DA1001689C5 /* KYImageProcessor.framework */,
+				7F281EBB2B356DA1001689C5 /* KYImageProcessorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F281EB52B356DA1001689C5 /* KYImageProcessor */ = {
+			isa = PBXGroup;
+			children = (
+				7F281EB62B356DA1001689C5 /* KYImageProcessor.h */,
+				7F281ECB2B356DAD001689C5 /* Sources */,
+			);
+			path = KYImageProcessor;
+			sourceTree = "<group>";
+		};
+		7F281EBF2B356DA1001689C5 /* KYImageProcessorTests */ = {
+			isa = PBXGroup;
+			children = (
+				7F281EC02B356DA1001689C5 /* KYImageProcessorTests.swift */,
+				7F281ED52B356EB6001689C5 /* PhotoConfiguration */,
+				7F281ED72B356EB6001689C5 /* ImageTransformer */,
+			);
+			path = KYImageProcessorTests;
+			sourceTree = "<group>";
+		};
+		7F281ECB2B356DAD001689C5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7F281ECC2B356EB1001689C5 /* KYPhotoConfiguration */,
+				7F281ECE2B356EB1001689C5 /* KYImagePreviewView */,
+				7F281ED02B356EB1001689C5 /* KYImageTransformer */,
+				7F5BD07C2B35790F00503561 /* Localizations */,
+				7F5BD07D2B35791C00503561 /* Resources */,
+				7F281EDB2B356F3B001689C5 /* Debug */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		7F281ECC2B356EB1001689C5 /* KYPhotoConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				7F281ECD2B356EB1001689C5 /* KYPhotoConfiguration.swift */,
+				7F281EDE2B3570B3001689C5 /* KYViewRatio.swift */,
+				7FB180572B3588D0004AD1E4 /* KYPhotoThumbnail.swift */,
+				7F5BD0862B357A1500503561 /* KYPhotoRatioLocalizations.swift */,
+			);
+			path = KYPhotoConfiguration;
+			sourceTree = "<group>";
+		};
+		7F281ECE2B356EB1001689C5 /* KYImagePreviewView */ = {
+			isa = PBXGroup;
+			children = (
+				7F281ECF2B356EB1001689C5 /* KYImagePreviewView.swift */,
+			);
+			path = KYImagePreviewView;
+			sourceTree = "<group>";
+		};
+		7F281ED02B356EB1001689C5 /* KYImageTransformer */ = {
+			isa = PBXGroup;
+			children = (
+				7F281ED12B356EB1001689C5 /* KYImageTransformer.swift */,
+			);
+			path = KYImageTransformer;
+			sourceTree = "<group>";
+		};
+		7F281ED52B356EB6001689C5 /* PhotoConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				7F281ED62B356EB6001689C5 /* KYPhotoConfigurationTests.swift */,
+				7F281EE12B3571F7001689C5 /* KYViewRatioTests.swift */,
+			);
+			path = PhotoConfiguration;
+			sourceTree = "<group>";
+		};
+		7F281ED72B356EB6001689C5 /* ImageTransformer */ = {
+			isa = PBXGroup;
+			children = (
+				7F281ED82B356EB6001689C5 /* KYImageTransformerTests.swift */,
+			);
+			path = ImageTransformer;
+			sourceTree = "<group>";
+		};
+		7F281EDB2B356F3B001689C5 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				7F281EDC2B356F4F001689C5 /* KYIPLogger.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		7F5BD07C2B35790F00503561 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				7F5BD07E2B35792E00503561 /* KYImageProcessorLocalizations.swift */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		7F5BD07D2B35791C00503561 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7F5BD0842B35794300503561 /* KYImageProcessor.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7F281EAE2B356DA1001689C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F281EC22B356DA1001689C5 /* KYImageProcessor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7F281EB22B356DA1001689C5 /* KYImageProcessor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F281EC52B356DA1001689C5 /* Build configuration list for PBXNativeTarget "KYImageProcessor" */;
+			buildPhases = (
+				7F281EAE2B356DA1001689C5 /* Headers */,
+				7F281EAF2B356DA1001689C5 /* Sources */,
+				7F281EB02B356DA1001689C5 /* Frameworks */,
+				7F281EB12B356DA1001689C5 /* Resources */,
+				7F281EE32B357400001689C5 /* Run Script (Swift Lint) */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KYImageProcessor;
+			productName = KYImageProcessor;
+			productReference = 7F281EB32B356DA1001689C5 /* KYImageProcessor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7F281EBA2B356DA1001689C5 /* KYImageProcessorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F281EC82B356DA1001689C5 /* Build configuration list for PBXNativeTarget "KYImageProcessorTests" */;
+			buildPhases = (
+				7F281EB72B356DA1001689C5 /* Sources */,
+				7F281EB82B356DA1001689C5 /* Frameworks */,
+				7F281EB92B356DA1001689C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F281EBE2B356DA1001689C5 /* PBXTargetDependency */,
+			);
+			name = KYImageProcessorTests;
+			productName = KYImageProcessorTests;
+			productReference = 7F281EBB2B356DA1001689C5 /* KYImageProcessorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F281EAA2B356DA0001689C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				ORGANIZATIONNAME = "Kaijie Yu";
+				TargetAttributes = {
+					7F281EB22B356DA1001689C5 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					7F281EBA2B356DA1001689C5 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 7F281EAD2B356DA0001689C5 /* Build configuration list for PBXProject "KYImageProcessor" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 7F281EA92B356DA0001689C5;
+			productRefGroup = 7F281EB42B356DA1001689C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F281EB22B356DA1001689C5 /* KYImageProcessor */,
+				7F281EBA2B356DA1001689C5 /* KYImageProcessorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F281EB12B356DA1001689C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F5BD0822B35794300503561 /* KYImageProcessor.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F281EB92B356DA1001689C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F281EE32B357400001689C5 /* Run Script (Swift Lint) */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script (Swift Lint)";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"$CONFIGURATION\" == \"Release\" ]; then\n  exit\nfi\n\nSCRIPT_PATH=\"../scripts-xcode\"\nif [ -e $SCRIPT_PATH/swiftlint.sh ]; then\n  $SCRIPT_PATH/swiftlint.sh $SCRIPT_PATH\nelse\n  echo \"File not found for Run Script (Swift Lint).\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F281EAF2B356DA1001689C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F281EDD2B356F4F001689C5 /* KYIPLogger.swift in Sources */,
+				7F281ED22B356EB1001689C5 /* KYPhotoConfiguration.swift in Sources */,
+				7F281EDF2B3570B3001689C5 /* KYViewRatio.swift in Sources */,
+				7FB180582B3588D0004AD1E4 /* KYPhotoThumbnail.swift in Sources */,
+				7F5BD0872B357A1500503561 /* KYPhotoRatioLocalizations.swift in Sources */,
+				7F281ED42B356EB1001689C5 /* KYImageTransformer.swift in Sources */,
+				7F281ED32B356EB1001689C5 /* KYImagePreviewView.swift in Sources */,
+				7F5BD07F2B35792E00503561 /* KYImageProcessorLocalizations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F281EB72B356DA1001689C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F281ED92B356EB7001689C5 /* KYPhotoConfigurationTests.swift in Sources */,
+				7F281EC12B356DA1001689C5 /* KYImageProcessorTests.swift in Sources */,
+				7F281EE22B3571F7001689C5 /* KYViewRatioTests.swift in Sources */,
+				7F281EDA2B356EB7001689C5 /* KYImageTransformerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F281EBE2B356DA1001689C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F281EB22B356DA1001689C5 /* KYImageProcessor */;
+			targetProxy = 7F281EBD2B356DA1001689C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F5BD0842B35794300503561 /* KYImageProcessor.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F5BD0832B35794300503561 /* en */,
+				7F5BD0852B35794500503561 /* zh-Hans */,
+			);
+			name = KYImageProcessor.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F281EC32B356DA1001689C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"KY_IMAGE_PROCESSING_FRAMEWORK=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -D DEBUG";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG KY_IMAGE_PROCESSING_FRAMEWORK $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		7F281EC42B356DA1001689C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"KY_IMAGE_PROCESSING_FRAMEWORK=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "KY_IMAGE_PROCESSING_FRAMEWORK $(inherited)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		7F281EC62B356DA1001689C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kjuly.KYImageProcessor;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,4";
+			};
+			name = Debug;
+		};
+		7F281EC72B356DA1001689C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kjuly.KYImageProcessor;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,4";
+			};
+			name = Release;
+		};
+		7F281EC92B356DA1001689C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kjuly.KYImageProcessorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,4";
+			};
+			name = Debug;
+		};
+		7F281ECA2B356DA1001689C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kjuly.KYImageProcessorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx watchos watchsimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,4";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F281EAD2B356DA0001689C5 /* Build configuration list for PBXProject "KYImageProcessor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F281EC32B356DA1001689C5 /* Debug */,
+				7F281EC42B356DA1001689C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7F281EC52B356DA1001689C5 /* Build configuration list for PBXNativeTarget "KYImageProcessor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F281EC62B356DA1001689C5 /* Debug */,
+				7F281EC72B356DA1001689C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7F281EC82B356DA1001689C5 /* Build configuration list for PBXNativeTarget "KYImageProcessorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F281EC92B356DA1001689C5 /* Debug */,
+				7F281ECA2B356DA1001689C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F281EAA2B356DA0001689C5 /* Project object */;
+}

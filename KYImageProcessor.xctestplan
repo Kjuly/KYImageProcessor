@@ -1,0 +1,33 @@
+{
+  "configurations" : [
+    {
+      "id" : "AE6A5FD1-5137-4190-BA88-6C87FD1C8702",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:KYImageProcessor.xcodeproj",
+          "identifier" : "7F281EB22B356DA1001689C5",
+          "name" : "KYImageProcessor"
+        }
+      ]
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:KYImageProcessor.xcodeproj",
+        "identifier" : "7F281EBA2B356DA1001689C5",
+        "name" : "KYImageProcessorTests"
+      }
+    }
+  ],
+  "version" : 1
+}

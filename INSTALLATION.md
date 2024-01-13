@@ -7,14 +7,14 @@
 Edit `Package.swift` to add the lib as a dependency:
 ```swift
 dependencies: [
-  .package(url: "https://github.com/Kjuly/KYImageProcessing.git", .upToNextMajor(from: "1.0"))
+  .package(url: "https://github.com/Kjuly/KYImageProcessor.git", .upToNextMajor(from: "1.0"))
 ]
 ```
 For a detailed guide, read Apple's developer doc [Creating a standalone Swift package with Xcode](https://developer.apple.com/documentation/xcode/creating-a-standalone-swift-package-with-xcode) and Swift's [Swift Package Manager](https://docs.swift.org/package-manager/PackageDescription/PackageDescription.html).
 
 #### Option 2: Use Xcode Project
 
-To add a package dependency to your Xcode project, select **File > Add Package Dependency** and enter the URL: `https://github.com/Kjuly/KYImageProcessing.git`.
+To add a package dependency to your Xcode project, select **File > Add Package Dependency** and enter the URL: `https://github.com/Kjuly/KYImageProcessor.git`.
 
 For a detailed guide, read Apple's developer doc: [Adding package dependencies to your app](https://developer.apple.com/documentation/xcode/adding-package-dependencies-to-your-app).
 
@@ -33,7 +33,7 @@ platform :ios, '16.0'
 target 'YourProjectTarget' do
   project 'Path/To/Your/YourProjectTarget.xcodeproj'
 
-  pod 'KYImageProcessing', '~> 1.0'
+  pod 'KYImageProcessor', '~> 1.0'
 end
 ```
 
@@ -54,7 +54,7 @@ For a detailed guide, read CocoaPods's doc: [Using CocoaPods](https://guides.coc
 
 1. Edit `Cartfile` to add the dependency:
 ```ruby
-github "Kjuly/KYImageProcessing" ~> 1.0
+github "Kjuly/KYImageProcessor" ~> 1.0
 ```
 
 2. Run the command in terminal:
@@ -62,7 +62,7 @@ github "Kjuly/KYImageProcessing" ~> 1.0
 $ carthage update --use-xcframeworks
 ```
 
-3. Drag the built `KYImageProcessing.xcframework` from `Carthage/Build` to the "Frameworks, Libraries, and Embedded Content" section of your Xcode project.
+3. Drag the built `KYImageProcessor.xcframework` from `Carthage/Build` to the "Frameworks, Libraries, and Embedded Content" section of your Xcode project.
 
 > [!TIP]
 > If you are using Carthage for an application, select "Embed & Sign", otherwise "Do Not Embed".
@@ -85,10 +85,10 @@ If you don't want to use any of the above package managers, you can add packages
 1. Run the commands in terminal:
 ```bash
 $ cd path/to/your/root/project/directory
-$ git submodule add https://github.com/Kjuly/KYImageProcessing.git Libs/KYImageProcessing
+$ git submodule add https://github.com/Kjuly/KYImageProcessor.git Libs/KYImageProcessor
 ```
 
-2. Open your project and add a reference to the source code folder: "KYImageProcessing/KYImageProcessing".
+2. Open your project and add a reference to the source code folder: "KYImageProcessor/KYImageProcessor".
 
 For a detailed guide about git submodule usage, read git's doc: [git-submodule](https://git-scm.com/docs/git-submodule).
 

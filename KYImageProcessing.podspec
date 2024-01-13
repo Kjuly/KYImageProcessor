@@ -1,10 +1,10 @@
 Pod::Spec.new do |spec|
-  spec.name         = "KYImageProcessing"
-  spec.version      = "1.1.0"
+  spec.name         = "KYImageProcessor"
+  spec.version      = "2.0.0"
   spec.summary      = "The image processing foundation of KYPhotoPicker."
   spec.license      = "MIT"
-  spec.source       = { :git => "https://github.com/Kjuly/KYImageProcessing.git", :tag => spec.version.to_s }
-  spec.homepage     = "https://github.com/Kjuly/KYImageProcessing"
+  spec.source       = { :git => "https://github.com/Kjuly/KYImageProcessor.git", :tag => spec.version.to_s }
+  spec.homepage     = "https://github.com/Kjuly/KYImageProcessor"
 
   spec.author             = { "Kjuly" => "dev@kjuly.com" }
   spec.social_media_url   = "https://twitter.com/kJulYu"
@@ -15,8 +15,8 @@ Pod::Spec.new do |spec|
 
   spec.swift_version = '5.0'
 
-  spec.source_files  = "KYImageProcessing"
-  spec.exclude_files = "KYImageProcessing/KYImageProcessing.docc"
+  spec.source_files  = "KYImageProcessor"
+  spec.exclude_files = "KYImageProcessor/KYImageProcessor.docc"
 
   spec.requires_arc = true
 end
