@@ -7,7 +7,7 @@
 Edit `Package.swift` to add the lib as a dependency:
 ```swift
 dependencies: [
-  .package(url: "https://github.com/Kjuly/KYImageProcessor.git", .upToNextMajor(from: "1.0"))
+  .package(url: "https://github.com/Kjuly/KYImageProcessor.git", .upToNextMajor(from: "2.0"))
 ]
 ```
 For a detailed guide, read Apple's developer doc [Creating a standalone Swift package with Xcode](https://developer.apple.com/documentation/xcode/creating-a-standalone-swift-package-with-xcode) and Swift's [Swift Package Manager](https://docs.swift.org/package-manager/PackageDescription/PackageDescription.html).
@@ -33,7 +33,7 @@ platform :ios, '16.0'
 target 'YourProjectTarget' do
   project 'Path/To/Your/YourProjectTarget.xcodeproj'
 
-  pod 'KYImageProcessor', '~> 1.0'
+  pod 'KYImageProcessor', '~> 2.0'
 end
 ```
 
@@ -54,7 +54,7 @@ For a detailed guide, read CocoaPods's doc: [Using CocoaPods](https://guides.coc
 
 1. Edit `Cartfile` to add the dependency:
 ```ruby
-github "Kjuly/KYImageProcessor" ~> 1.0
+github "Kjuly/KYImageProcessor" ~> 2.0
 ```
 
 2. Run the command in terminal:
