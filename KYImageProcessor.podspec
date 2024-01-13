@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "KYImageProcessor"
-  spec.version      = "2.0.0"
+  spec.version      = "2.0.1"
   spec.summary      = "The image processing foundation of KYPhotoPicker."
   spec.license      = "MIT"
   spec.source       = { :git => "https://github.com/Kjuly/KYImageProcessor.git", :tag => spec.version.to_s }
