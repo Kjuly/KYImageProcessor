@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-  name: "KYImageProcessing",
+  name: "KYImageProcessor",
   defaultLocalization: "en",
   platforms: [
     .iOS("15.5"),
@@ -13,27 +13,27 @@ let package = Package(
   ],
   products: [
     .library(
-      name: "KYImageProcessing",
+      name: "KYImageProcessor",
       targets: [
-        "KYImageProcessing",
+        "KYImageProcessor",
       ]),
   ],
   dependencies: [
   ],
   targets: [
     .target(
-      name: "KYImageProcessing",
+      name: "KYImageProcessor",
       dependencies: [
       ],
-      path: "KYImageProcessing/Sources",
+      path: "KYImageProcessor/Sources",
       resources: [
         .process("Resources/"),
       ]),
     .testTarget(
-      name: "KYImageProcessingTests",
+      name: "KYImageProcessorTests",
       dependencies: [
-        "KYImageProcessing",
+        "KYImageProcessor",
       ],
-      path: "KYImageProcessingTests"),
+      path: "KYImageProcessorTests"),
   ]
 )
