@@ -152,14 +152,4 @@ final class KYImageConfigurationTests: XCTestCase {
     XCTAssertEqual(KYImageRatioIdentifier.portrait_3_5.text(forCropping: true), "3 : 5")
     XCTAssertEqual(KYImageRatioIdentifier.portrait_9_16.text(forCropping: true), "9 : 16")
   }
-
-  // MARK: - Image Thumbnail
-
-  func testKYImageThumbnailSizeFromImageSize() throws {
-    XCTAssertEqual(KYImageThumbnail.defaultMaxSideLength, 128)
-
-    XCTAssertEqual(KYImageThumbnail.thumbnailSize(from: CGSize(width: 128, height: 128)), CGSize(width: 128, height: 128))
-    XCTAssertEqual(KYImageThumbnail.thumbnailSize(from: CGSize(width: 128, height: 256)), CGSize(width: 64, height: 128))
-    XCTAssertEqual(KYImageThumbnail.thumbnailSize(from: CGSize(width: 256, height: 128)), CGSize(width: 128, height: 64))
-  }
 }

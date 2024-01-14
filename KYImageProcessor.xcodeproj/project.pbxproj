@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F08B54E2B5365DE0004A405 /* KYImageThumbnailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F08B54D2B5365DE0004A405 /* KYImageThumbnailTests.swift */; };
 		7F281EBC2B356DA1001689C5 /* KYImageProcessor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F281EB32B356DA1001689C5 /* KYImageProcessor.framework */; };
 		7F281EC12B356DA1001689C5 /* KYImageProcessorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F281EC02B356DA1001689C5 /* KYImageProcessorTests.swift */; };
 		7F281EC22B356DA1001689C5 /* KYImageProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F281EB62B356DA1001689C5 /* KYImageProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F08B54D2B5365DE0004A405 /* KYImageThumbnailTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYImageThumbnailTests.swift; sourceTree = "<group>"; };
 		7F281EB32B356DA1001689C5 /* KYImageProcessor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KYImageProcessor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F281EB62B356DA1001689C5 /* KYImageProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYImageProcessor.h; sourceTree = "<group>"; };
 		7F281EBB2B356DA1001689C5 /* KYImageProcessorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYImageProcessorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -154,6 +156,7 @@
 			children = (
 				7F281ED62B356EB6001689C5 /* KYImageConfigurationTests.swift */,
 				7F281EE12B3571F7001689C5 /* KYImageViewRatioTests.swift */,
+				7F08B54D2B5365DE0004A405 /* KYImageThumbnailTests.swift */,
 			);
 			path = PhotoConfiguration;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F281ED92B356EB7001689C5 /* KYImageConfigurationTests.swift in Sources */,
+				7F08B54E2B5365DE0004A405 /* KYImageThumbnailTests.swift in Sources */,
 				7F281EC12B356DA1001689C5 /* KYImageProcessorTests.swift in Sources */,
 				7F281EE22B3571F7001689C5 /* KYImageViewRatioTests.swift in Sources */,
 				7F281EDA2B356EB7001689C5 /* KYImageTransformerTests.swift in Sources */,
