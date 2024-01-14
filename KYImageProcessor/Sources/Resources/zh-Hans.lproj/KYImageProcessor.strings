@@ -6,26 +6,26 @@
   Copyright © 2023 Kaijie Yu. All rights reserved.
 */
 
-// MARK: - Photo Ratio
+// MARK: - Image Ratio
 
 //"KYLS:Landscape" = "横向";
 //"KYLS:Portrait"  = "竖向";
 
 // Ratio - None
-"KYLS:Photo Ratio:Full Canvas" = "整块画布";
-"KYLS:Photo Ratio:Fullscreen"  = "全屏";
+"KYLS:Image Ratio:Full Canvas" = "整块画布";
+"KYLS:Image Ratio:Fullscreen"  = "全屏";
 
 // Ratio - Others
-"KYLS:Photo Ratio:Square"     = "正方形";
-"KYLS:Photo Ratio:5_4"        = "5 : 4";
-"KYLS:Photo Ratio:4_3"        = "4 : 3";
-"KYLS:Photo Ratio:7_5"        = "7 : 5";
-"KYLS:Photo Ratio:3_2"        = "3 : 2";
-"KYLS:Photo Ratio:5_3"        = "5 : 3";
-"KYLS:Photo Ratio:16_9"       = "16 : 9";
-"KYLS:Photo Ratio:Portrait:4_5"  = "4 : 5";
-"KYLS:Photo Ratio:Portrait:3_4"  = "3 : 4";
-"KYLS:Photo Ratio:Portrait:5_7"  = "5 : 7";
-"KYLS:Photo Ratio:Portrait:2_3"  = "2 : 3";
-"KYLS:Photo Ratio:Portrait:3_5"  = "3 : 5";
-"KYLS:Photo Ratio:Portrait:9_16" = "9 : 16";
+"KYLS:Image Ratio:Square"     = "正方形";
+"KYLS:Image Ratio:5_4"        = "5 : 4";
+"KYLS:Image Ratio:4_3"        = "4 : 3";
+"KYLS:Image Ratio:7_5"        = "7 : 5";
+"KYLS:Image Ratio:3_2"        = "3 : 2";
+"KYLS:Image Ratio:5_3"        = "5 : 3";
+"KYLS:Image Ratio:16_9"       = "16 : 9";
+"KYLS:Image Ratio:Portrait:4_5"  = "4 : 5";
+"KYLS:Image Ratio:Portrait:3_4"  = "3 : 4";
+"KYLS:Image Ratio:Portrait:5_7"  = "5 : 7";
+"KYLS:Image Ratio:Portrait:2_3"  = "2 : 3";
+"KYLS:Image Ratio:Portrait:3_5"  = "3 : 5";
+"KYLS:Image Ratio:Portrait:9_16" = "9 : 16";

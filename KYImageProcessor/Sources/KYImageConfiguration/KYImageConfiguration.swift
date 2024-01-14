@@ -1,5 +1,5 @@
 //
-//  KYPhotoConfiguration.swift
+//  KYImageConfiguration.swift
 //  KYImageProcessor
 //
 //  Created by Kjuly on 15/6/2023.
@@ -9,19 +9,19 @@
 import Foundation
 import CoreGraphics
 
-// MARK: - Photo Resolution
+// MARK: - Image Resolution
 
-public enum KYPhotoResolution: Int {
+public enum KYImageResolution: Int {
   case original = 0
   case high     = 1
   case medium   = 2
   case low      = 3
 }
 
-// MARK: - Photo Ratio
+// MARK: - Image Ratio
 
 @objc
-public enum KYPhotoRatioIdentifier: Int {
+public enum KYImageRatioIdentifier: Int {
   case unknown = -1
 
   /// Stands "Fullscreen" for "Camera Capture View Ratio" & "Photo Canvas Ratio"
@@ -48,9 +48,9 @@ public enum KYPhotoRatioIdentifier: Int {
   case portrait_9_16 = 9016 // 9:16
 }
 
-// MARK: - Photo Scale Mode
+// MARK: - Image Scale Mode
 
-public enum KYPhotoScaleMode: Int {
+public enum KYImageScaleMode: Int {
   case scaleAspectFill = 0
   case scaleAspectFit  = 1
 }

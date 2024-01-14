@@ -1,5 +1,5 @@
 //
-//  KYPhotoThumbnail.swift
+//  KYImageThumbnail.swift
 //  KYImageProcessor
 //
 //  Created by Kjuly on 22/12/2023.
@@ -8,8 +8,7 @@
 
 import Foundation
 
-@objc
-public class KYPhotoThumbnail: NSObject {
+public struct KYImageThumbnail {
 
   public static let defaultMaxSideLength: CGFloat = 128.0
 
@@ -22,8 +21,17 @@ public class KYPhotoThumbnail: NSObject {
             : CGSize(width: maxSideLength, height: imageSize.height * maxSideLength / imageSize.width))
   }
 
-  @objc
   public static func thumbnailSize(from imageSize: CGSize) -> CGSize {
     return thumbnailSize(from: imageSize, maxSideLength: defaultMaxSideLength)
+  }
+}
+
+// MARK: - ObjC
+
+@objcMembers
+public class KYImageThumbnailObjC: NSObject {
+
+  public static func thumbnailSize(from imageSize: CGSize) -> CGSize {
+    return KYImageThumbnail.thumbnailSize(from: imageSize)
   }
 }

@@ -1,5 +1,5 @@
 //
-//  KYViewRatio.swift
+//  KYImageViewRatio.swift
 //  KYImageProcessor
 //
 //  Created by Kjuly on 15/6/2023.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct KYViewRatio {
+public struct KYImageViewRatio {
 
   public let w: CGFloat
   public let h: CGFloat
@@ -20,16 +20,16 @@ public struct KYViewRatio {
     self.h = h
   }
 
-  public init(from ratioIdentifier: KYPhotoRatioIdentifier) {
+  public init(from ratioIdentifier: KYImageRatioIdentifier) {
     let rawValue = ratioIdentifier.rawValue
     self.init(w: CGFloat(rawValue % 1000000 / 1000), h: CGFloat(rawValue % 1000))
   }
 
   // MARK: - Public
 
-  public func ratioIdentifier() -> KYPhotoRatioIdentifier {
+  public func ratioIdentifier() -> KYImageRatioIdentifier {
     let rawValue = Int(self.w * 1000) + Int(self.h)
-    if let identifier = KYPhotoRatioIdentifier(rawValue: rawValue) {
+    if let identifier = KYImageRatioIdentifier(rawValue: rawValue) {
       return identifier
     } else {
       return .unknown

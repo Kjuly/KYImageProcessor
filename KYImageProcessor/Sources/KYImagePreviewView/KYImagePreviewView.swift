@@ -69,7 +69,7 @@ public class KYImagePreviewView: UIView {
   // MARK: - Private
 
   private func _imageViewFrame(with imageSize: CGSize, viewSizeAtMax: CGSize) -> CGRect {
-    let imageViewRatio = KYViewRatio(w: imageSize.width, h: imageSize.height)
+    let imageViewRatio = KYImageViewRatio(w: imageSize.width, h: imageSize.height)
     let imageViewSize: CGSize = (self.imageView.contentMode == .scaleAspectFit
                                  ? imageViewRatio.scaleAspectFitSize(with: viewSizeAtMax)
                                  : imageViewRatio.scaleAspectFillSize(with: viewSizeAtMax))

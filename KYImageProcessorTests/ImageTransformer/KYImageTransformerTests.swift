@@ -13,7 +13,7 @@ import XCTest
 
 final class KYImageTransformerTests: XCTestCase {
 
-  let kYNPhotoImageTransformerTestsAccuracy: CGFloat = 0.0001
+  let kKYImageTransformerTestsAccuracy: CGFloat = 0.0001
 
   override func setUpWithError() throws {
     // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -93,8 +93,8 @@ final class KYImageTransformerTests: XCTestCase {
     XCTAssertEqual(offset.y, 0)
 
     offset = KYImageTransformer.offsetFromBoundingAreaAfterImageRotated(angle: PI_2 / 2, imageSize: imageSize)
-    XCTAssertEqual(offset.x, 2500, accuracy: kYNPhotoImageTransformerTestsAccuracy)
-    XCTAssertEqual(offset.y, -2500, accuracy: kYNPhotoImageTransformerTestsAccuracy)
+    XCTAssertEqual(offset.x, 2500, accuracy: kKYImageTransformerTestsAccuracy)
+    XCTAssertEqual(offset.y, -2500, accuracy: kKYImageTransformerTestsAccuracy)
 
     offset = KYImageTransformer.offsetFromBoundingAreaAfterImageRotated(angle: PI_2, imageSize: imageSize)
     XCTAssertEqual(offset.x, 0)
@@ -104,8 +104,8 @@ final class KYImageTransformerTests: XCTestCase {
     // II: M_PI_2 < angle <= M_PI
     //
     offset = KYImageTransformer.offsetFromBoundingAreaAfterImageRotated(angle: PI_2 + PI_2 / 2, imageSize: imageSize)
-    XCTAssertEqual(offset.x, -500, accuracy: kYNPhotoImageTransformerTestsAccuracy)
-    XCTAssertEqual(offset.y, -5500, accuracy: kYNPhotoImageTransformerTestsAccuracy)
+    XCTAssertEqual(offset.x, -500, accuracy: kKYImageTransformerTestsAccuracy)
+    XCTAssertEqual(offset.y, -5500, accuracy: kKYImageTransformerTestsAccuracy)
 
     offset = KYImageTransformer.offsetFromBoundingAreaAfterImageRotated(angle: PI, imageSize: imageSize)
     XCTAssertEqual(offset.x, -1000)
@@ -115,12 +115,12 @@ final class KYImageTransformerTests: XCTestCase {
     // III: -M_PI <= angle < -M_PI_2
     //
     offset = KYImageTransformer.offsetFromBoundingAreaAfterImageRotated(angle: -PI, imageSize: imageSize)
-    XCTAssertEqual(offset.x, -1000, accuracy: kYNPhotoImageTransformerTestsAccuracy)
-    XCTAssertEqual(offset.y, -5000, accuracy: kYNPhotoImageTransformerTestsAccuracy)
+    XCTAssertEqual(offset.x, -1000, accuracy: kKYImageTransformerTestsAccuracy)
+    XCTAssertEqual(offset.y, -5000, accuracy: kKYImageTransformerTestsAccuracy)
 
     offset = KYImageTransformer.offsetFromBoundingAreaAfterImageRotated(angle: -PI + PI_2 / 2, imageSize: imageSize)
-    XCTAssertEqual(offset.x, -3500, accuracy: kYNPhotoImageTransformerTestsAccuracy)
-    XCTAssertEqual(offset.y, -2500, accuracy: kYNPhotoImageTransformerTestsAccuracy)
+    XCTAssertEqual(offset.x, -3500, accuracy: kKYImageTransformerTestsAccuracy)
+    XCTAssertEqual(offset.y, -2500, accuracy: kKYImageTransformerTestsAccuracy)
 
     //
     // IV: -M_PI_2 <= angle < 0
@@ -130,8 +130,8 @@ final class KYImageTransformerTests: XCTestCase {
     XCTAssertEqual(offset.y, 0)
 
     offset = KYImageTransformer.offsetFromBoundingAreaAfterImageRotated(angle: -PI_2 / 2, imageSize: imageSize)
-    XCTAssertEqual(offset.x, -500, accuracy: kYNPhotoImageTransformerTestsAccuracy)
-    XCTAssertEqual(offset.y, 500, accuracy: kYNPhotoImageTransformerTestsAccuracy)
+    XCTAssertEqual(offset.x, -500, accuracy: kKYImageTransformerTestsAccuracy)
+    XCTAssertEqual(offset.y, 500, accuracy: kKYImageTransformerTestsAccuracy)
   }
 
   // MARK: - Tests for Public Methods
@@ -150,17 +150,17 @@ final class KYImageTransformerTests: XCTestCase {
     XCTAssertEqual(KYImageTransformer.scaleValue(from: CGSize(width: 100, height: 200),
                                                  to: CGSize(width: 10, height: 20)),
                    0.1,
-                   accuracy: kYNPhotoImageTransformerTestsAccuracy)
+                   accuracy: kKYImageTransformerTestsAccuracy)
 
     XCTAssertEqual(KYImageTransformer.scaleValue(from: CGSize(width: 100, height: 200),
                                                  to: CGSize(width: 10, height: 40)),
                    0.2,
-                   accuracy: kYNPhotoImageTransformerTestsAccuracy)
+                   accuracy: kKYImageTransformerTestsAccuracy)
 
     XCTAssertEqual(KYImageTransformer.scaleValue(from: CGSize(width: 100, height: 200),
                                                  to: CGSize(width: 20, height: 20)),
                    0.2,
-                   accuracy: kYNPhotoImageTransformerTestsAccuracy)
+                   accuracy: kKYImageTransformerTestsAccuracy)
   }
 }
 #endif // END #if os(iOS)
