@@ -32,7 +32,7 @@ public struct KYImageViewRatio {
     if let identifier = KYImageRatioIdentifier(rawValue: rawValue) {
       return identifier
     } else {
-      return .unknown
+      return .undefined
     }
   }
 

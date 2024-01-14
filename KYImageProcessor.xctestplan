@@ -4,7 +4,17 @@
       "id" : "AE6A5FD1-5137-4190-BA88-6C87FD1C8702",
       "name" : "Test Scheme Action",
       "options" : {
-
+        "environmentVariableEntries" : [
+          {
+            "key" : "PACKAGE_RESOURCE_BUNDLE_URL",
+            "value" : "$(BUILT_PRODUCTS_DIR)"
+          }
+        ],
+        "targetForVariableExpansion" : {
+          "containerPath" : "container:KYImageProcessor.xcodeproj",
+          "identifier" : "7F281EB22B356DA1001689C5",
+          "name" : "KYImageProcessor"
+        }
       }
     }
   ],

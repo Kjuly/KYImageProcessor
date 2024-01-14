@@ -28,10 +28,17 @@ final class KYImageConfigurationTests: XCTestCase {
     XCTAssertEqual(KYImageResolution.low.rawValue, 3)
   }
 
+  // MARK: - Image Scale Mode
+
+  func testKYImageScaleMode() throws {
+    XCTAssertEqual(KYImageScaleMode.scaleAspectFill.rawValue, 0)
+    XCTAssertEqual(KYImageScaleMode.scaleAspectFit.rawValue, 1)
+  }
+
   // MARK: - Image Ratio
 
   func testKYImageRatioIdentifier() throws {
-    XCTAssertEqual(KYImageRatioIdentifier.unknown.rawValue, -1)
+    XCTAssertEqual(KYImageRatioIdentifier.undefined.rawValue, -1)
     XCTAssertEqual(KYImageRatioIdentifier.none.rawValue, 0)
     // Square
     XCTAssertEqual(KYImageRatioIdentifier.square.rawValue, 1001)
@@ -51,11 +58,99 @@ final class KYImageConfigurationTests: XCTestCase {
     XCTAssertEqual(KYImageRatioIdentifier.portrait_9_16.rawValue, 9016)
   }
 
-  // MARK: - Image Scale Mode
+  //
+  // KYImageRatioIdentifier.getter:textKey
+  //
+  func testKYImageRatioIdentifierTextKey() throws {
+    XCTAssertEqual(KYImageRatioIdentifier.undefined.textKey, "KYLS:Image Ratio:Undefined")
+    XCTAssertEqual(KYImageRatioIdentifier.none.textKey, "KYLS:Image Ratio:Fullscreen")
+    // Square
+    XCTAssertEqual(KYImageRatioIdentifier.square.textKey, "KYLS:Image Ratio:Square")
+    // Landscape
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_5_4.textKey, "KYLS:Image Ratio:5_4")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_4_3.textKey, "KYLS:Image Ratio:4_3")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_7_5.textKey, "KYLS:Image Ratio:7_5")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_3_2.textKey, "KYLS:Image Ratio:3_2")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_5_3.textKey, "KYLS:Image Ratio:5_3")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_16_9.textKey, "KYLS:Image Ratio:16_9")
+    // Portrait
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_4_5.textKey, "KYLS:Image Ratio:Portrait:4_5")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_3_4.textKey, "KYLS:Image Ratio:Portrait:3_4")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_5_7.textKey, "KYLS:Image Ratio:Portrait:5_7")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_2_3.textKey, "KYLS:Image Ratio:Portrait:2_3")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_3_5.textKey, "KYLS:Image Ratio:Portrait:3_5")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_9_16.textKey, "KYLS:Image Ratio:Portrait:9_16")
+  }
 
-  func testKYImageScaleMode() throws {
-    XCTAssertEqual(KYImageScaleMode.scaleAspectFill.rawValue, 0)
-    XCTAssertEqual(KYImageScaleMode.scaleAspectFit.rawValue, 1)
+  //
+  // KYImageRatioIdentifier.getter:text
+  //
+  func testKYImageRatioIdentifierText() throws {
+    XCTAssertEqual(KYImageRatioIdentifier.undefined.text, "Undefined")
+    XCTAssertEqual(KYImageRatioIdentifier.none.text, "Fullscreen")
+    // Square
+    XCTAssertEqual(KYImageRatioIdentifier.square.text, "Square")
+    // Landscape
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_5_4.text, "5 : 4")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_4_3.text, "4 : 3")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_7_5.text, "7 : 5")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_3_2.text, "3 : 2")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_5_3.text, "5 : 3")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_16_9.text, "16 : 9")
+    // Portrait
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_4_5.text, "4 : 5")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_3_4.text, "3 : 4")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_5_7.text, "5 : 7")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_2_3.text, "2 : 3")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_3_5.text, "3 : 5")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_9_16.text, "9 : 16")
+  }
+
+  //
+  // KYImageRatioIdentifier.text(forCropping:)
+  //
+  func testKYImageRatioIdentifierTextForCroppingOrNot() {
+    //
+    // forCropping = false
+    XCTAssertEqual(KYImageRatioIdentifier.undefined.text(forCropping: false), "Undefined")
+    XCTAssertEqual(KYImageRatioIdentifier.none.text(forCropping: false), "Fullscreen")
+    // Square
+    XCTAssertEqual(KYImageRatioIdentifier.square.text(forCropping: false), "Square")
+    // Landscape
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_5_4.text(forCropping: false), "5 : 4")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_4_3.text(forCropping: false), "4 : 3")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_7_5.text(forCropping: false), "7 : 5")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_3_2.text(forCropping: false), "3 : 2")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_5_3.text(forCropping: false), "5 : 3")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_16_9.text(forCropping: false), "16 : 9")
+    // Portrait
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_4_5.text(forCropping: false), "4 : 5")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_3_4.text(forCropping: false), "3 : 4")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_5_7.text(forCropping: false), "5 : 7")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_2_3.text(forCropping: false), "2 : 3")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_3_5.text(forCropping: false), "3 : 5")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_9_16.text(forCropping: false), "9 : 16")
+
+    //
+    // forCropping = true
+    XCTAssertEqual(KYImageRatioIdentifier.undefined.text(forCropping: true), "Undefined")
+    XCTAssertEqual(KYImageRatioIdentifier.none.text(forCropping: true), "Full Canvas")
+    // Square
+    XCTAssertEqual(KYImageRatioIdentifier.square.text(forCropping: true), "Square")
+    // Landscape
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_5_4.text(forCropping: true), "5 : 4")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_4_3.text(forCropping: true), "4 : 3")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_7_5.text(forCropping: true), "7 : 5")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_3_2.text(forCropping: true), "3 : 2")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_5_3.text(forCropping: true), "5 : 3")
+    XCTAssertEqual(KYImageRatioIdentifier.landscape_16_9.text(forCropping: true), "16 : 9")
+    // Portrait
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_4_5.text(forCropping: true), "4 : 5")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_3_4.text(forCropping: true), "3 : 4")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_5_7.text(forCropping: true), "5 : 7")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_2_3.text(forCropping: true), "2 : 3")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_3_5.text(forCropping: true), "3 : 5")
+    XCTAssertEqual(KYImageRatioIdentifier.portrait_9_16.text(forCropping: true), "9 : 16")
   }
 
   // MARK: - Image Thumbnail

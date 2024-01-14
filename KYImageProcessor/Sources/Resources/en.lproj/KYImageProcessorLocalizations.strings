@@ -8,15 +8,18 @@
 
 // MARK: - Image Ratio
 
-//"KYLS:Landscape" = "横向";
-//"KYLS:Portrait"  = "竖向";
+//"KYLS:Landscape" = "Landscape";
+//"KYLS:Portrait"  = "Portrait";
+
+// Ratio - Undefined
+"KYLS:Image Ratio:Undefined"  = "Undefined";
 
 // Ratio - None
-"KYLS:Image Ratio:Full Canvas" = "整块画布";
-"KYLS:Image Ratio:Fullscreen"  = "全屏";
+"KYLS:Image Ratio:Full Canvas" = "Full Canvas";
+"KYLS:Image Ratio:Fullscreen"  = "Fullscreen";
 
 // Ratio - Others
-"KYLS:Image Ratio:Square"     = "正方形";
+"KYLS:Image Ratio:Square"     = "Square";
 "KYLS:Image Ratio:5_4"        = "5 : 4";
 "KYLS:Image Ratio:4_3"        = "4 : 3";
 "KYLS:Image Ratio:7_5"        = "7 : 5";

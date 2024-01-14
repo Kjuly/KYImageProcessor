@@ -50,7 +50,7 @@ final class KYImageViewRatioTests: XCTestCase {
     XCTAssertEqual(viewRatio.ratioIdentifier(), KYImageRatioIdentifier.portrait_9_16)
 
     viewRatio = KYImageViewRatio(w: 11, h: 8)
-    XCTAssertEqual(viewRatio.ratioIdentifier(), KYImageRatioIdentifier.unknown)
+    XCTAssertEqual(viewRatio.ratioIdentifier(), KYImageRatioIdentifier.undefined)
   }
 
   func testKYImageViewRatioScaleAspectFitSize() throws {
