@@ -1,5 +1,5 @@
 //
-//  KYImageTransformer.swift
+//  KYImageProcessor.swift
 //  KYImageProcessor
 //
 //  Created by Kjuly on 24/10/2019.
@@ -11,7 +11,8 @@ import Foundation
 #if os(iOS)
 import UIKit
 
-public class KYImageTransformer {
+public struct KYImageProcessor {
+
 #if DEBUG
   static let DEBUG_CROPPING_IMAGE_: Bool = false
 #endif // END #if DEBUG
