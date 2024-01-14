@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		7F08B54E2B5365DE0004A405 /* KYImageThumbnailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F08B54D2B5365DE0004A405 /* KYImageThumbnailTests.swift */; };
+		7F08B5512B5384260004A405 /* KYImageProcessor+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F08B54F2B5384250004A405 /* KYImageProcessor+Transform.swift */; };
+		7F08B5522B5384260004A405 /* KYImageProcessor+Crop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F08B5502B5384250004A405 /* KYImageProcessor+Crop.swift */; };
+		7F08B5552B5386E30004A405 /* KYImageProcessor_CropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F08B5532B5386E30004A405 /* KYImageProcessor_CropTests.swift */; };
+		7F08B5562B5386E30004A405 /* KYImageProcessor_TransformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F08B5542B5386E30004A405 /* KYImageProcessor_TransformTests.swift */; };
 		7F281EBC2B356DA1001689C5 /* KYImageProcessor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F281EB32B356DA1001689C5 /* KYImageProcessor.framework */; };
 		7F281EC22B356DA1001689C5 /* KYImageProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F281EB62B356DA1001689C5 /* KYImageProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7F281ED22B356EB1001689C5 /* KYImageConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F281ECD2B356EB1001689C5 /* KYImageConfiguration.swift */; };
@@ -35,6 +39,10 @@
 
 /* Begin PBXFileReference section */
 		7F08B54D2B5365DE0004A405 /* KYImageThumbnailTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYImageThumbnailTests.swift; sourceTree = "<group>"; };
+		7F08B54F2B5384250004A405 /* KYImageProcessor+Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KYImageProcessor+Transform.swift"; sourceTree = "<group>"; };
+		7F08B5502B5384250004A405 /* KYImageProcessor+Crop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KYImageProcessor+Crop.swift"; sourceTree = "<group>"; };
+		7F08B5532B5386E30004A405 /* KYImageProcessor_CropTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYImageProcessor_CropTests.swift; sourceTree = "<group>"; };
+		7F08B5542B5386E30004A405 /* KYImageProcessor_TransformTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KYImageProcessor_TransformTests.swift; sourceTree = "<group>"; };
 		7F281EB32B356DA1001689C5 /* KYImageProcessor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KYImageProcessor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F281EB62B356DA1001689C5 /* KYImageProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYImageProcessor.h; sourceTree = "<group>"; };
 		7F281EBB2B356DA1001689C5 /* KYImageProcessorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KYImageProcessorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				7F281ED12B356EB1001689C5 /* KYImageProcessor.swift */,
+				7F08B54F2B5384250004A405 /* KYImageProcessor+Transform.swift */,
+				7F08B5502B5384250004A405 /* KYImageProcessor+Crop.swift */,
 			);
 			path = KYImageProcessor;
 			sourceTree = "<group>";
@@ -162,6 +172,8 @@
 			isa = PBXGroup;
 			children = (
 				7F281ED82B356EB6001689C5 /* KYImageProcessorTests.swift */,
+				7F08B5542B5386E30004A405 /* KYImageProcessor_TransformTests.swift */,
+				7F08B5532B5386E30004A405 /* KYImageProcessor_CropTests.swift */,
 			);
 			path = KYImageProcessor;
 			sourceTree = "<group>";
@@ -325,7 +337,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F281EDD2B356F4F001689C5 /* KYIPLogger.swift in Sources */,
+				7F08B5522B5384260004A405 /* KYImageProcessor+Crop.swift in Sources */,
 				7F281ED22B356EB1001689C5 /* KYImageConfiguration.swift in Sources */,
+				7F08B5512B5384260004A405 /* KYImageProcessor+Transform.swift in Sources */,
 				7F281EDF2B3570B3001689C5 /* KYImageViewRatio.swift in Sources */,
 				7FB180582B3588D0004AD1E4 /* KYImageThumbnail.swift in Sources */,
 				7F281ED42B356EB1001689C5 /* KYImageProcessor.swift in Sources */,
@@ -338,6 +352,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F08B5552B5386E30004A405 /* KYImageProcessor_CropTests.swift in Sources */,
+				7F08B5562B5386E30004A405 /* KYImageProcessor_TransformTests.swift in Sources */,
 				7F281ED92B356EB7001689C5 /* KYImageConfigurationTests.swift in Sources */,
 				7F08B54E2B5365DE0004A405 /* KYImageThumbnailTests.swift in Sources */,
 				7F281EE22B3571F7001689C5 /* KYImageViewRatioTests.swift in Sources */,
