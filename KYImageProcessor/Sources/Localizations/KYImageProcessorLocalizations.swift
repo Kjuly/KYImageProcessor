@@ -11,20 +11,22 @@ import Foundation
 #if KY_IMAGE_PROCESSING_FRAMEWORK
 
 extension String {
-  var ky_imageProcessorLocalized: String {
-    return NSLocalizedString(self,
-                             tableName: "KYImageProcessorLocalizations",
-                             bundle: Bundle(identifier: "com.kjuly.KYImageProcessor") ?? Bundle.main,
-                             value: "",
-                             comment: "")
+  public var ky_imageProcessorLocalized: String {
+    NSLocalizedString(
+      self,
+      tableName: "KYImageProcessorLocalizations",
+      bundle: Bundle(identifier: "com.kjuly.KYImageProcessor") ?? Bundle.main,
+      value: "",
+      comment: ""
+    )
   }
 }
 
 #else
 
 extension String {
-  var ky_imageProcessorLocalized: String {
-    return NSLocalizedString(self, tableName: "KYImageProcessorLocalizations", bundle: .module, value: "", comment: "")
+  public var ky_imageProcessorLocalized: String {
+    NSLocalizedString(self, tableName: "KYImageProcessorLocalizations", bundle: .module, value: "", comment: "")
   }
 }
 
