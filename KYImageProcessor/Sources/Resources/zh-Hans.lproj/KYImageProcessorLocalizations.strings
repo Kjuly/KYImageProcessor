@@ -8,8 +8,8 @@
 
 // MARK: - Image Ratio
 
-//"KYLS:Landscape" = "横向";
-//"KYLS:Portrait"  = "竖向";
+"KYLS:Landscape" = "横向";
+"KYLS:Portrait"  = "竖向";
 
 // Ratio - Undefined
 "KYLS:Image Ratio:Undefined"  = "未定义";
